@@ -14,7 +14,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=["*"],  # Or specify "https://your-frontend-url.com" for security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
