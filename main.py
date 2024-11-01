@@ -14,7 +14,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or specify "https://your-frontend-url.com" for security
+    allow_origins=["https://ai-canvas-calculator-frontend.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
